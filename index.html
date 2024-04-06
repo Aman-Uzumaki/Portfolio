@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Kumar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.jpeg" class="logo" alt="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Skills & Achievements</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>B-Tech CSE Student</p>
+                <h1>Hi, I'm <span>Aman</span> Kumar from <br>Jamshedpur</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------About----------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="mypic.jpeg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About me</h1>
+                    <p>I am a computer science enthusiast currently pursuing the 
+                        Bachelor's of Technology in the domain of Computer 
+                        Science & Engineering from GIET University. Currently, I am in 4th semester. 
+                        I love to learn and explore the development of websites and 
+                        apps. I also love to solve computational problems. Currently,
+                        I am a 2 star coder on CodeChef and I have been working on 
+                        web projects like carinfo, e-canteen and AatmaNirbhar Yuva.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id='skills'>
+                        <ul>
+                            <li><span>Web Development</span><br>HTML <br>CSS <br>JavaScript <br>PHP</li>
+                            <li><span>Programming languages</span><br>C <br> Java <br>Python</li>
+                            <li><span>Database Management</span><br>MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id='experience'>
+                        <ul>
+                            <!-- <li><span>Web Development</span><br>Creating simple websites that access database.</li> -->
+                            <!-- <li><span>Python Programming</span><br>Solving simple computational problems using Python.</li> -->
+                            <li><span>No experience yet!!!</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id='education'>
+                        <ul>
+                            <li><span>B-Tech (CSE)</span><br>
+                                2022 - Present <br>
+                                University: GIET University <br>
+                                Current Grade: 8.59 CGPA <br>
+                                Expected to graduate in 2026
+                            </li>
+                            <li><span>Senior Secondary</span><br>
+                                2020 - 2022 <br>
+                                School: Vivek Vidyalaya <br>
+                                Board: CBSE <br>
+                                Class 12th grade: 77%
+                            </li>
+                            <li><span>Secondary</span><br>
+                                2009 - 2020 <br>
+                                School: Netaji Subhas Public School <br>
+                                Board: CBSE <br>
+                                Class 10th grade: 86.40%
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------services----------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>I am an amateur in the field of web development and have 
+                        worked on a few web projects. I have the ability to create 
+                        simple web projects involving databases connectivity.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+</body>
+</html>

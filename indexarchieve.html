@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Kumar: Portfolio</title>
+    <link rel="stylesheet" href="stylesarchieve.css">
+    <style>
+                /* styles.css */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden; /* Ensure no horizontal scrolling */
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0px;
+        }
+
+        nav {
+            background-color: #000000;
+            color: #fff;
+            text-align: right;
+            padding: 5px 0;
+            /* position: fixed; Fix the navigation to stay on the right
+            width: calc(100% - 250px); Ensure the navigation takes up space, leaving the picture area */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0px 20px;
+            display: inline-block;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            padding: 20px;
+            /* margin-left: 250px; Adjust to match the width of the fixed navigation */
+        }
+
+        h1, h2, h3 {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+        }
+
+        #projects {
+            /* float: right; */
+            width: 50%;
+            padding: 0px 10px;
+            margin: auto;
+            overflow: visible;
+        }
+
+        .project {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            /* margin-left: 10px; */
+        }
+
+        #picture {
+            float: left;
+            /* width: 250px; Set the width of the picture area */
+            /* height: 50vh; Ensure full height */
+            overflow: hidden; /*Hide overflow content*/
+            margin-top: 25px;
+            margin-right: 10px;
+        }
+
+        #picture img {
+            /* width: 100%; Make the image fill the container */
+            height: 50vh; /* Ensure full height */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        #contact {
+            float: right;
+            width: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aman Kumar</h1>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <!-- Add more links as needed -->
+    </nav>
+    <main>
+        <section id="picture">
+            <img src="WhatsApp Image 2024-02-11 at 1.08.48 PM.jpeg">
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <b>Mail:</b> ak237237000@gmail.com <br>
+            <b>Contact No:</b> 882 557 2954
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project">
+                <h3>AatmaNirbhar Yuva (ANY)</h3>
+                <p>Atmanirbhar Yuva, abbreviated as ANY, is an innovative web platform 
+                    strategically designed to empower students residing in rural areas 
+                    through comprehensive educational support. This initiative aims to 
+                    bridge the educational gap by providing a technological solution 
+                    tailored for economically disadvantaged students in rural communities.
+                </p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project">
+                <h3>Smart Grade Calculator</h3>
+                <p>This project utilizes Java and MySQL to create a dynamic grade
+                    generator. The system empowers teachers to design exam structures,
+                    including the number of exams and subjects. Teachers can enter individual student
+                    marks, and students can log in to view their results. The project showcases Java 
+                    and MySQL connectivity and allows flexibility for each teacher to determine 
+                    the subjects and exams they conduct.
+                </p>
+                <a href="#">View Project</a>
+                </div>
+        <!-- Add more project items as needed -->
+        </section>
+        
+    </main>
+  
+    <footer>
+        <p>Thanks for visiting</p>
+    </footer>
+    <!--<script src="script.js"></script>-->
+  </body>
+  </html>
